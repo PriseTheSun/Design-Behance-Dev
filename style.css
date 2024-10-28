@@ -86,30 +86,70 @@ section {
   width: 30px;
 }
 .discover_button,
-.more_about_button{
+.more_about_button {
   font-size: 0.7em;
   font-weight: 700;
   transition: 0.5s;
 }
-.discover_button{
+.discover_button {
   background-color: var(--branco);
   padding: 15px;
 }
-.discover_button:hover{
+.discover_button:hover {
   background-color: var(--lilas);
   color: var(--branco);
 }
-.more_about_button{
+.more_about_button {
   border: solid 1px var(--branco);
   padding: 15px;
   color: var(--branco);
   transition: 0.5s;
 }
-.more_about_button:hover{
+.more_about_button:hover {
   border: solid 1px var(--lilas);
   padding: 15px;
   color: var(--lilas);
 }
+
+.card p{
+  padding: 10px 50px;
+  font-size: 1em;
+}
+.card a .svg-inline--fa{
+  font-size: 2em !important;
+  padding: 10px 50px;
+}
+.title{
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  gap: 20px ;
+}
+.title h3{
+  font-weight: 400;
+}
+
+
+#icon-card{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.title .svg-inline--fa{
+  font-size: 2em !important;
+}
+
+
+
+
+
+
+
+
+
+
 
 /*Media Queries*/
 @media (min-width: 1280px) and (max-width: 1440px) {
@@ -128,18 +168,23 @@ section {
 }
 
 @media (max-width: 768px) {
+  #icons,
   #header #nav ul {
     display: none;
   }
   #hero {
     height: 100dvh;
-
+    background-position: center;
   }
   #hero h1 {
     font-size: 3em;
     width: 100%;
   }
-}
-
-@media (max-width: 575px) {
+  .card{
+   width: 100%;
+  }
+  #icon-card{
+    height: 600px;
+    flex-direction: column;
+  }
 }
