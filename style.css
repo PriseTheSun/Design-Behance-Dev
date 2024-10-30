@@ -112,12 +112,12 @@ section {
 }
 
 .card p{
-  padding: 10px 50px;
+  padding: 10px 60px;
   font-size: 1em;
 }
 .card a .svg-inline--fa{
   font-size: 2em !important;
-  padding: 10px 50px;
+  padding: 10px 60px;
 }
 .title{
   display: flex;
