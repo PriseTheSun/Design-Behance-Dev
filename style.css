@@ -13,6 +13,7 @@
   --branco: #fff;
   --lilas: #bd79ea;
   --preto: #000;
+  --amarelo: #f8cf37;
 }
 
 section {
@@ -111,46 +112,84 @@ section {
   color: var(--lilas);
 }
 
-.card p{
+.card p {
   padding: 10px 60px;
   font-size: 1em;
 }
-.card a .svg-inline--fa{
+.card a .svg-inline--fa {
   font-size: 2em !important;
   padding: 10px 60px;
 }
-.title{
+.title {
   display: flex;
   align-items: center;
   font-size: 1.2em;
-  gap: 20px ;
+  gap: 20px;
 }
-.title h3{
+.title h3 {
   font-weight: 400;
 }
 
-
-#icon-card{
+#icon-card {
   height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-.title .svg-inline--fa{
+.title .svg-inline--fa {
   font-size: 2em !important;
 }
 
-
-
-
-
-
-
-
-
-
-
+#image-container {
+  height: 600px;
+  display: flex;
+}
+.content_image {
+  background-image: url(assets/Img/banner_dois_variacao_I.jpg);
+  width: 50%;
+  height: 100%;
+  position: relative;
+  left: -20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content_description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  padding: 50px;
+}
+#image-container p,
+#image-container h3 {
+  font-weight: 400;
+  width: 350px;
+}
+#image-container h3 {
+  font-size: 2em;
+}
+#image-container p {
+  font-size: 1em;
+}
+#image-container p:nth-child(4) {
+  font-size: 0.8em;
+  border-left: solid 2px var(--amarelo);
+  padding-left: 10px;
+}
+.black-button {
+  background-color: var(--preto);
+  color: var(--branco);
+  padding: 10px 20px;
+  transition: 0.5s;
+  font-size: 0.6em;
+}
+.black-button:hover {
+  background-color: var(--lilas);
+  color: var(--branco);
+}
 /*Media Queries*/
 @media (min-width: 1280px) and (max-width: 1440px) {
   #hero h1 {
@@ -180,11 +219,54 @@ section {
     font-size: 3em;
     width: 100%;
   }
-  .card{
-   width: 100%;
+  .card {
+    width: 100%;
   }
-  #icon-card{
+  #icon-card {
     height: 600px;
     flex-direction: column;
+  }
+
+  #image-container {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+  .content_image {
+    background-image: url(assets/Img/banner_dois_variacao_I.jpg);
+    width: unset;
+    height: 500px;
+    position: unset;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .content_description {
+    width: 100%;
+    padding: 0px;
+  }
+  #image-container p,
+  #image-container h3 {
+    font-weight: 400;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  #hero h1 {
+    font-size: 2em;
+  }
+  #hero div {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  #hero {
+    background-position: left;
+  }
+  #icon-card {
+    height: 680px;
+  }
+  .content_image {
+   background-position: center;  
   }
 }
