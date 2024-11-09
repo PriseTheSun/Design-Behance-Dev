@@ -50,7 +50,7 @@ section {
 
 #hero {
   background: url(assets/Img/banner_principal_variacao_II.jpg) no-repeat
-    center/cover;
+    top/cover;
   height: 750px;
   display: flex;
   flex-direction: column;
@@ -253,7 +253,7 @@ section {
   background-image: url(assets/Img/card_IV.jpg);
 }
 
-#newsletter{
+#newsletter {
   height: 300px;
   display: flex;
   flex-direction: column;
@@ -262,6 +262,35 @@ section {
   gap: 20px;
   background-color: var(--branco-escuro);
 }
+
+.email-content {
+  position: relative;
+}
+.arrow {
+  position: absolute;
+  right: -345px;
+  top: 3px;
+  font-size: 1.5em;
+}
+
+.email-input {
+  width: 100%;
+  border: solid #000;
+  border-width: 0px 0px 1px 0px;
+  background: none;
+  height: 40px;
+  outline: none;
+}
+
+.email-input::placeholder {
+  font-size: 0.9em;
+  padding: 2px;
+}
+
+.checkbox-content {
+ 
+}
+
 
 /* Media Queries */
 @media (min-width: 1280px) and (max-width: 1440px) {
